@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restaurant Booking Agent</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="header-row">
+          <div>
+            <div class="title">Restaurant Booking Agent</div>
+            <div class="subtitle">Chat UI chạy local (FastAPI)</div>
+          </div>
+          <button id="restart" class="restart" type="button">Restart</button>
+        </div>
+      </header>
+
+      <main class="chat">
+        <div id="messages" class="messages" aria-live="polite"></div>
+      </main>
+
+      <form id="composer" class="composer" autocomplete="off">
+        <input
+          id="input"
+          class="input"
+          type="text"
+          placeholder="Nhập tin nhắn… (ví dụ: Tôi muốn đặt bàn cho 4 người tối nay ở Riverside)"
+          required
+        />
+        <button id="send" class="send" type="submit">Gửi</button>
+      </form>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
